@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:m="urn:import:com.beta.election.media.client.widgets">
+	<ui:style>
+	body {
+			background: #000 no-repeat;
+			background-attachment: scroll;
+			background-repeat: repeat-x;
+		}
+		.main{
+			width: 778px;
+			height: 586px;
+			overflow-y: auto; 
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<g:SimplePanel styleName="{style.main}" ui:field="mainContainer" >
+			<m:AccordionPanel ui:field="accordion" />
+		</g:SimplePanel>
+	</g:HTMLPanel>
+</ui:UiBinder> 

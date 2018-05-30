@@ -1,0 +1,373 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background:url(images/scroll-bar.png);
+	-webkit-border-radius: 1ex;
+}
+
+.clearfix {
+	height: 0px;
+	clear: both;
+}
+
+.layer {
+	width: 100%;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: black;
+}
+
+.layer .main {
+	width: 1250px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.layer .main .top_panel {
+	width: 1243px;
+	height: 44px;
+	margin-bottom: 10px;
+	float: left;
+}
+
+.layer .main .top_panel .date_panel {
+	width: auto;
+	height: inherit;
+	margin-right: 275px;
+	float: right;
+}
+
+.layer .main .top_panel .user_panel {
+	width: 236px;
+	height: inherit;
+	float: right;
+}
+
+.layer .main .content_area {
+	width: 1228px;
+	height: 748px;
+	padding: 10px;
+	float: left;
+}
+
+.layer .main .content_area .center_panel {
+	width: 65%;
+	height: inherit;
+	border: 1px solid black;
+	float: left;
+	margin-right: 5px;
+}
+
+.layer .main .content_area .center_panel .module_filter {
+	width: 100%;
+	height: 44px;
+	float: left;
+}
+
+.layer .main .content_area .center_panel .content_panel {
+	width: 100%;
+	height: auto;
+	min-height: 300px;
+	float: left;
+	border: 1px solid red;
+}
+
+.layer .main .content_area .right_panel {
+	width: 250px;
+	height: inherit;
+	border: 1px solid #DADADA;
+	float: right;
+}
+
+.layer .main .content_area .left_panel {
+	width: 142px;
+	height: inherit;
+	float: left;
+}
+
+.contents {
+	float: left;
+	width: 820px;
+	background-color: #F9F9F9;
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.15);
+	border-radius: 0 3px 3px 0;
+	border: 1px solid #DADADA;
+	border-image: initial;
+	border-left: 1px solid #F9F9F9;
+}
+
+.contents .grid_wrapper {
+	overflow: hidden;
+	padding: 10px;
+	width: auto;
+	height: auto;
+	min-height: 596px;
+}
+
+.contents .grid_wrapper .top {
+	width: auto;
+	min-width: 800px;
+	height: auto;
+	min-height: 40px;
+	float: left;
+	padding: 10px 0px 10px 0px;
+	display: none;
+}
+
+.contents .grid_wrapper .top .filter_left {
+	min-width: 250px;
+	width: auto;
+	height: auto;
+	min-height: 44px;
+	float: left;
+	visibility: hidden;
+}
+
+.contents .grid_wrapper .top .filter_right {
+	min-width: 250px;
+	width: auto;
+	height: auto;
+	min-height: 44px;
+	float: right;
+	visibility: hidden;
+}
+
+.contents .grid_wrapper .bottom {
+	overflow: hidden;
+	float: left;
+	width: 800px;
+	height: auto;
+	min-height: 726px;
+}
+
+.tab_nav {
+	padding: 5px 0 5px 5px;
+	margin: -5px -1px 0 -5px;
+	overflow: hidden;
+}
+
+.tab_nav>li.active_tab {
+	padding-left: 0;
+	background-color: #F9F9F9;
+	border-radius: 3px 0 0 3px;
+	border: 1px solid #DADADA;
+	border-right-color: #F7F7F7;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+	border-image: initial;
+}
+
+.tab_nav>li {
+	width: 142px;
+	padding-left: 1px;
+	background-position: 10px 29px;
+}
+
+.i_32_dashboard {
+	background: url("images/i_32_dashboard.png") no-repeat scroll
+		transparent;
+}
+
+.tab_nav>li>a {
+	width: 100%;
+	height: 86px;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+.tab_label {
+	font-family: Oswald;
+	color: #9D9D9D;
+	font-size: 18px;
+	text-shadow: 0 1px 0 white;
+}
+
+.tab_label {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 50px;
+	padding-top: 26px;
+}
+
+.tab_info {
+	font-family: Droid Sans;
+	color: #A6A6A6;
+	font-size: 12px;
+	text-shadow: 0 1px 0 white;
+}
+
+.tab_info {
+	display: block;
+	height: 20px;
+	line-height: 20px;
+	padding-left: 50px;
+}
+
+.i_32_inbox {
+	background: url("images/i_32_inbox.png") no-repeat scroll transparent;
+}
+
+.i_32_charts {
+	background: url("images/i_32_charts.png") no-repeat scroll transparent;
+}
+
+.i_32_ui {
+	background: url("images/i_32_ui.png") no-repeat scroll transparent;
+}
+
+.i_32_tables {
+	background: url("images/i_32_tables.png") no-repeat scroll transparent;
+}
+
+.i_32_forms {
+	background: url("images/i_32_forms.png") no-repeat scroll transparent;
+}
+
+.i_32_history {
+	background: url("images/i_32_forms.png") no-repeat scroll transparent;
+}
+
+.gwt-SuggestBoxPopup .suggestPopupTopCenterInner,.gwt-SuggestBoxPopup .suggestPopupBottomCenterInner
+	{
+	width: 251px;
+	height: 1px;
+	line-height: 1px;
+}
+
+.gwt-SuggestBoxPopup .item-selected {
+	background: #F3F3F3;
+	width: 236px;
+}
+
+/* Tiny Scrollbar */
+#scrollbar1 {
+	width: 520px;
+	margin: 20px 0 10px;
+}
+
+#scrollbar1 .viewport {
+	width: 500px;
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+}
+
+#scrollbar1 .overview {
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+}
+
+#scrollbar1 .scrollbar {
+	background: transparent url(images/bg-scrollbar-track-y.png) no-repeat 0
+		0;
+	position: relative;
+	background-position: 0 0;
+	float: right;
+	width: 15px;
+}
+
+#scrollbar1 .track {
+	background: transparent url(images/bg-scrollbar-trackend-y.png)
+		no-repeat 0 100%;
+	height: 100%;
+	width: 13px;
+	position: relative;
+	padding: 0 1px;
+}
+
+#scrollbar1 .thumb {
+	background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat
+		50% 100%;
+	height: 20px;
+	width: 25px;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: -5px;
+}
+
+#scrollbar1 .thumb .end {
+	background: transparent url(images/bg-scrollbar-thumb-y.png) no-repeat
+		50% 0;
+	overflow: hidden;
+	height: 5px;
+	width: 25px;
+}
+
+#scrollbar1 .disable {
+	display: none;
+}
+
+/* Tiny Carousel */
+#slider1 {
+	height: 1%;
+	overflow: hidden;
+	padding: 0 0 10px;
+}
+
+#slider1 .viewport {
+	float: left;
+	width: 240px;
+	height: 125px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider1 .buttons {
+	background: url("images/buttons.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	margin: 30px 10px 0 0;
+	background-position: 0 -38px;
+	text-indent: -999em;
+	float: left;
+	width: 39px;
+	height: 37px;
+	overflow: hidden;
+	position: relative;
+}
+
+#slider1 .next {
+	background-position: 0 0;
+	margin: 30px 0 0 10px;
+}
+
+#slider1 .disable {
+	visibility: hidden;
+}
+
+#slider1 .overview {
+	list-style: none;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width: 240px;
+	left: 0;
+	top : 0;
+}
+
+#slider1 .overview li {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 1px;
+	height: 121px;
+	border: 1px solid #dcdcdc;
+	width: 236px;
+}

@@ -1,0 +1,15 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.main{float: left; margin: 5px 2px;}
+		.main .link{padding: 3px; text-decoration: none; font-size: 14px; cursor: pointer; background: #000000; color: #FFFFFF;}
+	</ui:style>
+	<g:HTMLPanel>
+	    <div class="{style.main}">
+	        <g:Anchor styleName="{style.link}" href="javascript:void(0)" ui:field="linkAnchor">
+	            Ashanti-Region
+	        </g:Anchor>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

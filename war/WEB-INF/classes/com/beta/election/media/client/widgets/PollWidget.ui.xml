@@ -1,0 +1,110 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix {
+			height: 0px;
+			clear: both;
+		}
+		
+		.main {
+			width: 800px;
+			height: auto;
+			padding: 4px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.main:hover{
+			cursor: pointer;
+		}
+		
+		.main .wrapper {
+			width: auto;
+			min-width: 500px;
+			min-height: 99px;
+			padding: 5px;
+		}
+		
+		.main .wrapper .logo_field {
+			width: 118px;
+			height: 74px;
+			float: left;
+			margin-right: 5px;
+			font-family: 'LeagueGothicRegular', cursive;
+		}
+		
+		.main .wrapper .logo_field .avatar {
+			float: left;
+			width: 64px;
+			height: 64px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.main .wrapper .logo_field .logo {
+			float: left;
+			width: 32px;
+			height: 32px;
+			margin-top: auto;
+			margin-bottom: auto;
+		}
+		
+		.main .wrapper .name_field {
+			width: 200px;
+			padding: 28px 0px 1px 0px;
+			float: left;
+			font-size: 22px;
+			color: white;
+			font-family: 'LeagueGothicRegular', cursive;
+		}
+		
+		.main .wrapper .constituency_field {
+			width: 160px;
+			padding: 29px 0px 1px 0px;
+			float: left;
+			margin-right: 10px;
+			font-size: 21px;
+			color: white;
+			font-family: 'LeagueGothicRegular', cursive;
+		}
+		
+		.main .wrapper .party {
+			width: 50px;
+			padding: 28px 0px 1px 0px;
+			float: right;
+			margin-right: 20px;
+			font-size: 24px;
+			color: white;
+			font-family: 'LeagueGothicRegular', cursive;
+		}
+		
+		.main .wrapper .vote {
+			width: 200px;
+			padding: 25px 0px 1px 0px;
+			float: right;
+			font-size: 30px;
+			color: white;
+			font-family: 'LeagueGothicRegular', cursive;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="{style.main}">
+			<div class="{style.wrapper}">
+				<div class="{style.logo_field}">
+					<g:Image styleName="{style.avatar}" ui:field="avatarField" />
+<!-- 					<div class="{style.clearfix}" />
+ -->					<g:Image styleName="{style.logo}" ui:field="logoField" />
+				</div>
+				<div class="{style.name_field}" ui:field="nameField">Kwabena
+					Fokuo - Adjei</div>
+				<div class="{style.constituency_field}" ui:field="consField">Ahafo
+					Anno South
+					Cons</div>
+				<div class="{style.vote}" ui:field="votes">300,577</div>
+				<div class="{style.party}" ui:field="party">GWT</div>
+
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

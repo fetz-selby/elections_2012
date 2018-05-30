@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- The DOCTYPE declaration above will set the     -->
+<!-- browser's rendering engine into                -->
+<!-- "Standards Mode". Replacing this declaration   -->
+<!-- with a "Quirks Mode" doctype is not supported. -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<!--                                                               -->
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<!--                                                               -->
+<link type="text/css" rel="stylesheet" href="MediaElection2.css">
+<link rel="stylesheet" type="text/css" href="jquery.jqplot.min.css" />
+<link rel="stylesheet" type="text/css" href="jquery-ui-1.8.23.custom.css" />
+
+<script type="text/javascript" src="lib/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="lib/jquery-ui-1.8.23.custom.min.js"></script>
+<!--[if IE]><script type="text/javascript" src="lib/excanvas.compiled.js"></script><![endif]-->
+<script type="text/javascript" src="lib/jquery.jqplot.min.js"></script>
+<script type="text/javascript" src="lib/jqplot.barRenderer.min.js"></script>
+<script type="text/javascript"
+	src="lib/jqplot.categoryAxisRenderer.min.js"></script>
+<script type="text/javascript" src="lib/jqplot.pieRenderer.min.js"></script>
+<script type="text/javascript"
+	src="lib/jqplot.canvasAxisLabelRenderer.min.js"></script>
+<script type="text/javascript"
+	src="lib/jqplot.canvasTextRenderer.min.js"></script>
+<script type="text/javascript" src="lib/jqplot.pointLabels.min.js"></script>
+<script type="text/javascript" src="lib/jqplot.cursor.min.js"></script>
+<script type="text/javascript" src="lib/jquery.tinyscrollbar.min.js"></script>
+<script type="text/javascript" src="lib/jquery.tinycarousel.min.js"></script>
+
+
+<!--     <link type="text/css" rel="stylesheet" href="left_pane.css"> -->
+<!--     <link type="text/css" rel="stylesheet" href="main.css"> -->
+
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>Media Election</title>
+
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript"
+	src="mediaelection2/mediaelection2.nocache.js"></script>
+</head>
+
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body>
+
+	<!-- OPTIONAL: include this if you want history support -->
+	<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+		style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+
+	<!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
+	<noscript>
+		<div
+			style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
+			Your web browser must have JavaScript enabled in order for this
+			application to display correctly.</div>
+	</noscript>
+	<div class="layer">
+		<div class="main">
+			<div class="top_panel" id="top_panel">
+				<div class="user_panel" id="user_panel"></div>
+				<div class="date_panel" id="date_panel"></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="content_area" id="content_area">
+
+
+
+				<div class="left_panel" id="left_panel">
+					<ul class="tab_nav">
+						<li class="active_tab i_32_dashboard" id="dashboard"><a
+							href="#" title="General Info"> <span class="tab_label">Dashboard</span>
+								<span class="tab_info">General Info</span> </a></li>
+						<li class="i_32_inbox" id="polls"><a href="#"
+							title="View sent in polls"> <span class="tab_label">Polls</span>
+								<span class="tab_info">Incoming Polls</span> </a></li>
+						<li class="i_32_charts" id="analysis"><a href="#"
+							title="View Vote performance"> <span class="tab_label">Charts</span>
+								<span class="tab_info">Votes Analysis</span> </a></li>
+						<li class="i_32_ui" id="candidate"><a href="#"
+							title="View Candidates"> <span class="tab_label">Candidates</span>
+								<span class="tab_info">Party Representatives</span> </a></li>
+						<li class="i_32_tables" id="region"><a href="#"
+							title="Goto a specific Constituency"> <span class="tab_label">Regions</span>
+								<span class="tab_info">10 Regions</span> </a></li>
+						<li class="i_32_forms" id="map"><a href="#"
+							title="Browse Constituencies"> <span class="tab_label">Maps</span>
+								<span class="tab_info">Constituency Views</span> </a></li>
+						<li class="i_32_history" id="history"><a href="#"
+							title="Historic Changes"> <span class="tab_label">History</span>
+								<span class="tab_info">History Analysis</span> </a></li>
+					</ul>
+				</div>
+
+
+				<!-- 				<div class="center_panel" id="center_panel"> -->
+				<div class="contents" id="center_panel">
+					<div class="grid_wrapper">
+						<div class="top" id="module_filter">
+							<div class="filter_left" id="left_filter"></div>
+							<div class="filter_right" id="right_filter"></div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="bottom" id="content_panel"></div>
+					</div>
+				</div>
+				<div class="right_panel" id="right_panel"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

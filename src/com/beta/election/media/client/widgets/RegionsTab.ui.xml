@@ -1,0 +1,13 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style type="com.beta.election.media.client.widgets.RegionsTab.NewStyle" field="newStyle">
+		.main{width: 100%; height: auto; padding: 2px; margin: 0 auto;}
+		.main .container{list-style-type: none; width: 100%;}
+		.main .liStyle{margin: 0; padding: 0; float: left; width: 100%;}
+		.main .liStyle .aStyle{width: 100%; padding: 0 15px; user-select: none; text-decoration: none; text-align: left; line-height: 3.0; border: 1px solid #FFF; background: red; color: #FFF;}
+	</ui:style>
+	<g:HTMLPanel styleName="{newStyle.main}">
+		<ul ui:field="ulElement"></ul>
+	</g:HTMLPanel>
+</ui:UiBinder> 

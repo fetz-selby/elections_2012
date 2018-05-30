@@ -1,0 +1,46 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix{height: 0px; clear: both;}
+		.main{width: 770px; margin: 0 auto; padding: 0;}
+		.main .top{float: left; width: 98%; padding: 10px;}
+		.main .top .title-style{float: left; width: 350px; text-align: center; font-size: 23px; color: #FFFFFF; }
+		.main .top .date-style{float: left; margin-left: 50px; line-height: 28px; margin-bottom: 10px; margin-right: 25px; color: #FFFFFF;}
+		.main .top .switch-style{float: right; padding: 0 2px; margin-bottom: 8px; opacity: 0.2;}
+		.main .top .switch-style .radio-style{margin-right: 15px; color: #FFFFFF;}
+		.main .top .headers{float: left; width: 98%; min-height: 60px; padding: 5px;}
+		.main .top .headers .party-panel{float: left; width: 100%; max-height: 106px; overflow: scroll;}
+		.main .top .headers .region-panel{float: left; width: 100%;}
+		
+		.main .content{float:left; width: 98%; margin: 0 auto;}
+		.main .content .table-panel{float: left; width: 100%; min-height: 50px; max-height: 130px; overflow: scroll;border: 1px solid #FFFFFF;}
+		.main .content .chart-panel{width: 710px; height: 150px; margin: 0 auto;}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.main}">
+		<div class="{style.top}">
+			<g:SimplePanel styleName="{style.date-style}" ui:field="datePanel" />
+			<div class="{style.title-style}">
+				<label ui:field="titleLabel">ASHANTI REGION</label>
+			</div>
+			<g:FlowPanel styleName="{style.switch-style}">
+				<g:RadioButton name="data" ui:field="partyRadio" styleName="{style.radio-style}">Party</g:RadioButton>
+				<g:RadioButton name="data" ui:field="regionRadio" styleName="{style.radio-style}" value="true">Region</g:RadioButton>
+			</g:FlowPanel>
+			
+			<div class="{style.clearfix}"></div>
+			
+			<g:HTMLPanel styleName="{style.headers}" ui:field="headers">
+				<g:FlowPanel styleName="{style.party-panel}" ui:field="partyPanel"></g:FlowPanel>
+				<div class="{style.clearfix}"></div>
+				<g:FlowPanel styleName="{style.region-panel}" ui:field="regionPanel"></g:FlowPanel>
+			</g:HTMLPanel>
+		</div>
+		
+		<div class="{style.content}">
+			<g:SimplePanel styleName="{style.table-panel}" ui:field="tablePanel"></g:SimplePanel>
+			<div class="{style.clearfix}"></div>
+			<g:SimplePanel styleName="{style.chart-panel}" ui:field="chartPanel"></g:SimplePanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

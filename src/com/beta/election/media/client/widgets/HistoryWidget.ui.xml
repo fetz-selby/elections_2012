@@ -1,0 +1,44 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.main{
+			float: left;
+			width: 335px;
+			height: 30px;
+			padding: 5px;
+		}
+		.main .logo{
+			float: left;
+			width: 20px;
+			height: 20px;
+		}
+		.main .name-style{
+			float: left;
+			width: 160px;
+			padding-left: 10px;
+			font-size: 20px;
+			color: white;
+		}
+		.main .party-style{
+			float: left;
+			width: 50px;
+			padding-left: 5px;
+			font-size: 20px;
+			color: white;
+		}
+		.main .votes-style{
+			float: left;
+			width: 85px;
+			padding-left: 5px;
+			font-size: 22px;
+			color: white;
+		}
+	</ui:style>
+	<g:HTMLPanel styleName="{style.main}" ui:field="container">
+		<g:Image styleName="{style.logo}" ui:field="logo"/>
+		<div class="{style.name-style}" ui:field="nameField"></div>
+		<div class="{style.party-style}" ui:field="partyField"></div>
+		<div class="{style.votes-style}" ui:field="votesField"></div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,26 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix{height: 0; clear: both;}
+		.main{float: left; width: 72px; margin: 5px 15px 5px 0px;}
+		.main .link{width: 100%; text-decoration: none; font-size: 14px; cursor: pointer; background: #FFFFFF;}
+		.main .link .image-style{float: left; width: 64px; height: 64px;}
+		.main .link .label-div{float: left; width: 64px; text-align: center; background: #FFFFFF;}
+		.main .link .label-div .label-style{}
+		.main .link .value-style{text-align: center; margin-top: 5px; font-size: 14px; font-weight: bold; color: #FFFFFF; background: transparent;}
+	</ui:style>
+	<g:HTMLPanel>
+	    <div class="{style.main}">
+	        <a class="{style.link}" href="javascript:void(0)" ui:field="linkAnchor">
+	             <div class="{style.label-div}">
+	                <label class="{style.label-style}" ui:field="labelElement">partyName</label>
+	            </div>
+	            <div class="{style.clearfix}"></div>
+	            <g:Image styleName="{style.image-style}" ui:field="partyImage"/>
+	           	<div class="{style.clearfix}"></div>
+	            <div class="{style.value-style}" ui:field="valueLabel"></div>
+	        </a>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

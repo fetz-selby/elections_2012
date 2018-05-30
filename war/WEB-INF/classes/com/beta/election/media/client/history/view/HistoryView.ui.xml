@@ -1,0 +1,53 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix{
+			clear: both;
+			height: 0px;
+		}
+		.main{
+			width: 800px;
+		}
+		.main .wrapper{
+			padding: 10px;
+		}
+		.main .title{
+			padding: 8px 0px 8px 0px;
+			text-align: center;
+			font-weight: bold;
+			font-size: 22px;
+			color: white;
+		}
+		.main .wrapper .top-nav{
+			padding: 10px;
+			display: none;
+		}
+		.main .wrapper .chart-area{
+			width: 690px;
+			height: 150px;
+		}
+		.main .wrapper .detail-area{
+			width: 100%;
+			height: 100px;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="{style.main}">
+			<div class="{style.wrapper}">
+				<div class="{style.top-nav}">
+					<g:Anchor ui:field="backToRegionLink" text="Back" href="javascript:void(0)"/>
+				</div>
+				<div class="{style.clearfix}"></div>
+				<div class="{style.title}" ui:field="consNameTitle"></div>
+				<div class="{style.clearfix}"></div>
+				
+				<g:SimplePanel styleName="{style.chart-area}" ui:field="chartContainer"/>
+				
+				<div class="{style.clearfix}"></div>
+				
+				<g:SimplePanel styleName="{style.detail-area}" ui:field="detailsContainer"/>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

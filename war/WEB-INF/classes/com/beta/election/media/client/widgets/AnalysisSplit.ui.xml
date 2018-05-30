@@ -1,0 +1,189 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.candidate-divLAnalyses {
+			float: left;
+			text-align: left;
+			width: 350px;
+			padding: 10px;
+			margin: 0px 0px 0px 0px;
+			opacity: 2.4;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+		}
+		
+		.search_analyses {
+			float: left;
+			background: none;
+			border: dashed 1px #FC0;
+			color: #fff;
+			padding: 5px;
+			margin-left: 38px;
+			width: 261px;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 20px;
+			opacity: 0.1;
+			margin-bottom: 7px;
+		}
+		
+		.year_analyses {
+			background: none;
+			color: #fff;
+			padding: 5px;
+			margin: 12px auto 15px 92px;
+			width: 199px;
+			height: 60px;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			text-align: center;
+		}
+		
+		.candidate-idAnalyses {
+			visibility: hidden;
+			float: none;
+			text-align: center;
+			width: 250px;
+			height: 233px;
+			padding: 7px;
+			margin: 0px auto;
+			opacity: 2.4;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+		}
+		
+		.c-name {
+			background: url(media_bgs/nm-bg.png);
+			background-position: bottom;
+			float: none;
+			text-align: center;
+			width: 260px;
+			height: 45px;
+			padding: 28px 5px 5px 5px;
+			margin: 0px auto;
+			opacity: 2.4;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+			visibility: hidden;
+		}
+		
+		.can_logo {
+			background: transparent;
+			visibility: hidden;
+			float: right;
+			width: 77px;
+			height: 77px;
+			margin-top: -112px;
+			position: absolute;
+			padding-left: 5px;
+		}
+		
+		.town_analyses {
+			border-bottom: solid 1px #fff;
+			background: none;
+			float: none;
+			text-align: center;
+			width: 251px;
+			height: 40px;
+			padding: 10px;
+			margin: 0px auto;
+			opacity: 2.4;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+			visibility: hidden;
+		}
+		
+		.perc_div {
+			background: none;
+			border-bottom: solid 1px #fff;
+			float: none;
+			text-align: left;
+			width: 251px;
+			height: 40px;
+			padding: 10px;
+			margin: 0px auto;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+			visibility: hidden;
+		}
+		
+		.perc_analyses {
+			float: left;
+			text-align: left;
+			width: 98px;
+			height: 40px;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+		}
+		
+		.votes_analyses {
+			float: right;
+			text-align: left;
+			width: 120px;
+			height: 40px;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			margin-left: 10px;
+			color: #FF0;
+			font-weight: bold;
+		}
+		
+		.candidate-divLAnalyses {
+			float: left;
+			text-align: left;
+			width: 350px;
+			padding: 10px;
+			margin: 0px 0px 0px 0px;
+			opacity: 2.4;
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 40px;
+			color: #fff;
+			font-weight: bold;
+		}
+		
+		.hide-chart {
+			display: none;
+		}
+		
+		.logo-style{
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<body>
+			<div align="left" style="overflow:hidden; width:inherit; height:auto;">
+				<div class="{style.candidate-divLAnalyses}">
+					<g:SimplePanel styleName="{style.search_analyses}" ui:field="searchContainer" />
+					<g:SimplePanel styleName="{style.year_analyses}" ui:field="yearContainer" />
+					<div class="{style.candidate-idAnalyses}" ui:field="imageHolder" >
+						<g:Image ui:field="imageContainer" width="250px" height="233px"/>
+					</div>
+					<div class="{style.c-name}" ui:field="nameHolder">
+						<g:SimplePanel ui:field="nameContainer" />
+						<div class="{style.can_logo}" ui:field="logoHolder">
+							<g:Image width="77px" height="77px" styleName="{style.logo-style}" ui:field="logoContainer"/>
+						</div>
+					</div>
+					<div class="{style.town_analyses}" ui:field="constituencyField" />
+					<div class="{style.perc_div}" ui:field="voteHolder">
+						<div class="{style.perc_analyses}" ui:field="percentageField" />
+						<div class="{style.votes_analyses}" ui:field="votesField" />
+					</div>
+				</div>
+				<div class="{style.candidate-divLAnalyses}"></div>
+					<g:SimplePanel ui:field="chartContainer" />
+			</div>
+		</body>
+	</g:HTMLPanel>
+</ui:UiBinder> 

@@ -1,0 +1,42 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix{
+			height: 0px;
+			clear: both;		
+		}
+		.main{
+			width: 100%;
+			height: 210px;
+			backgroud-color: transparent;
+		}
+		.main .summary{
+			float: left;
+			font-size: 32px;
+			padding: 2px;
+		}
+		.main .summary .label-summary{
+			float: left;
+			padding: 0px 2px 0px 2px;
+		}
+		.main .detail{
+			width: 100%;
+			height: auto;
+		}		
+	</ui:style>
+	<g:HTMLPanel styleName="{style.main}">
+		
+		<div class="{style.summary}">
+			<label class="{style.label-summary}" ui:field="declaredLabel"></label>
+			<label class="{style.label-summary}" ui:field="declaredCount">&nbsp;</label>	
+			<label class="{style.label-summary}" ui:field="slash"></label>
+			<label class="{style.label-summary}" ui:field="overallCount">&nbsp;</label>
+		</div>
+		
+		<div class="{style.clearfix}"></div>
+		
+		<g:SimplePanel styleName="{style.detail}" ui:field="detailPanel"/>
+		
+	</g:HTMLPanel>
+</ui:UiBinder> 

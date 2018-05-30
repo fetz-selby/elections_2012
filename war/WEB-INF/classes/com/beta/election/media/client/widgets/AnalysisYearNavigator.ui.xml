@@ -1,0 +1,70 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix {
+			height: 0px;
+			clear: both;
+		}
+		
+		.main {
+			width: auto;
+			max-height: 30px;
+		}
+		
+		.main {
+			height: auto;
+			margin: auto;
+		}
+		
+		.main .up {
+			float:left;
+			width: 32px;
+			height: auto;
+			padding-left: 2px;
+		}
+		
+		.main .up:hover {
+			float:left;
+			width: 32px;
+			height: auto;
+			padding-left: 2px;
+			cursor: pointer;
+		}
+		
+		.main .text_display {
+			float:left;
+			width: 80px;
+			text-align: center;
+			height: auto;
+			font-size: 27px;
+			font-weight: bold;
+		}
+		
+		.main .down {
+			float:left;
+			width: 32px;
+			height: auto;
+			padding-left: 4px;
+		}
+		
+		.main .down:hover {
+			float:left;
+			width: 32px;
+			height: auto;
+			padding-left: 4px;
+			cursor: pointer;
+		}
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="{style.main}">
+				<g:Image styleName="{style.up}" url="images/br_prev_32.png"
+					 ui:field="downButton" />
+<!-- 				<div class="{style.clearfix}"></div>
+ -->				<div class="{style.text_display}" ui:field="yearText" />
+<!-- 				<div class="{style.clearfix}"></div>
+ -->				<g:Image styleName="{style.down}" url="images/br_next_32.png"
+					ui:field="upButton" />
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

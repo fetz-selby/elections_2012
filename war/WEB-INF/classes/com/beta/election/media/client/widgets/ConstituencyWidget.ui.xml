@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.main{	
+			width: 220px;
+			margin: 7px;
+			float: left;
+		}
+	
+		.main .constituency{
+			font-family: 'LeagueGothicRegular', cursive;
+			font-size: 22px;
+			margin: auto;
+			text-align: center;
+			color: white;
+			cursor: pointer;
+		}
+		
+	</ui:style>
+	<g:HTMLPanel>
+		<!-- .main:hover{
+			background-color: blanchedAlmond;
+			cursor: pointer;
+			box-shadow: 5px 5px 5px #888888;	
+		} -->
+		<div class="{style.main}">
+			<g:SimplePanel styleName="{style.constituency}" ui:field="constituencyField" />
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

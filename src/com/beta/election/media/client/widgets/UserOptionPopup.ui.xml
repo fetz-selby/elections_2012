@@ -1,0 +1,37 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix{
+			height: 0px;
+			clear: both;
+		}
+		.main{
+			width: 150px;
+			height: auto;
+		}
+		.main .row{
+			width: inherit;
+			height: auto;
+			float: left;
+			text-align: left;
+		}
+		
+		.main .row:hover{
+			background-color: #f3f3f3;
+			width: inherit;
+			height: auto;
+			float: left;
+			text-align: left;
+			cursor: pointer;
+		}
+	
+	</ui:style>
+	<g:HTMLPanel>
+		<div class="{style.main}">
+			<div class="{style.row}" ui:field="accountSetting">Account Settings</div>
+			<div class="{style.row}" ui:field="logout">Logout</div>
+		</div>
+	
+	</g:HTMLPanel>
+</ui:UiBinder> 

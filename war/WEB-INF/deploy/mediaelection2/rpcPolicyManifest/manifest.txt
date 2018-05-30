@@ -1,0 +1,3 @@
+# Module mediaelection2
+# RPC service class, partial path of RPC policy file
+com.beta.election.media.client.RetrieveService, E8E9FAD1EB76B230E12CB0199D8E1D63.gwt.rpc

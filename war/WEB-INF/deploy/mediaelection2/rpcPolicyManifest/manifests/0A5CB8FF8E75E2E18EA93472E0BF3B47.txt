@@ -1,0 +1,2 @@
+serviceClass: com.beta.election.media.client.RetrieveService
+path: E8E9FAD1EB76B230E12CB0199D8E1D63.gwt.rpc

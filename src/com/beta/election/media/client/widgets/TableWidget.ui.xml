@@ -1,0 +1,17 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:style>
+		.clearfix{height: 0; clear: both;}
+		.main{float: left; padding: 3px;}
+		.main .header{text-align: center; font-size: 13px; font-weight: bold; color: #FFFFFF;}
+		.main .value-style{margin-top: 3px; margin-right: 5px; text-align: center; font-size: 14px; font-weight: bold; color: #FFFFFF;}
+	</ui:style>
+	<g:HTMLPanel>
+	    <div class="{style.main}">
+	        <div class="{style.header}" ui:field="headerName"></div>
+	        <div class="{style.clearfix}"></div>
+	        <div class="{style.value-style}" ui:field="valueName"></div>
+	    </div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
